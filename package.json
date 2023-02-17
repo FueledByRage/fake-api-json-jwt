@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "node server.js",
-    "start-auth": "node server.js"
+    "start-auth": "node server.js",
+    "postinstall": "npm audit fix"
   },
   "author": "ME:)",
   "license": "ISC",
