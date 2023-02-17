@@ -75,6 +75,10 @@ fs.readFile("./users.json", (err, data) => {
   res.status(200).json({access_token})
 })
 
+server.get('/', ( req, res ) =>{
+  res.json({ hi: 'Hi'})
+})
+
 // Login to one of the users from ./users.json
 server.post('/auth/login', (req, res) => {
   console.log("login endpoint called; request body:");
